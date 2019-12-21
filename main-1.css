@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.grid > div{
+    border: solid 1px #999;
+    background-color: #ccc;
+
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    /*
+    une largeur fige de 200px et le reste fractionné
+    grid-template-columns: 200px 5fr 1fr;
+    */
+    grid-column-gap: 20px;
+}
