@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.grid > div{
+    border: solid 1px #999;
+    background-color: #ccc;
+
+}
+.site {
+    display: grid;
+    grid-template-rows: 100px 1fr 50px;
+    grid-template-columns: 2fr 8fr;
+    
+}
+
+.header{
+    border: solid 1px rgb(153, 153, 153);
+    background-color: #ccc;
+    grid-column: 1 / span 2;
+}
+
+.footer{
+    border: solid 1px #999;
+    background-color: #ccc;
+    grid-column: 1 / span 2;
+}
+
+.body{
+    border: solid 1px rgb(153, 223, 156);
+    background-color: rgb(4, 160, 38);
+}
+
+.sidebar{
+    border: solid 1px rgb(52, 80, 241);
+    background-color: rgb(11, 226, 226);
+}
+
