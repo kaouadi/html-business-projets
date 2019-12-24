@@ -17,8 +17,10 @@ body {
      "header header"
      "sidebar body"
      "footer footer";
+     
      justify-items: center;
      align-items: center;
+     
     
     
 }
@@ -43,6 +45,9 @@ body {
     grid-area: body;
     border: solid 1px rgb(153, 223, 156);
     background-color: rgb(4, 160, 38);
+    width: 200px;
+    justify-self: start;
+    align-self: start;
 }
 
 .sidebar{

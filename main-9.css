@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+.grid{
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+}
+
+div{
+    border: solid 1px #999;
+    background-color: #ccc;
+}
+
+.col2{
+    grid-column-end: span 2;
+}
+
+.col3{
+    grid-column-end: span 3;
+}
+.col3, .col2{
+    grid-column-end: span 12;
+}

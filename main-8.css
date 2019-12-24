@@ -3,47 +3,20 @@ body {
     padding: 0;
 }
 
-.grid > div{
-    border: solid 1px #999;
-    background-color: #ccc;
-
-}
 .site {
     display: grid;
-    grid-template-rows: 100px 1fr 50px;
-    grid-template-columns: 2fr 8fr;
+    grid-template-rows: minmax(100px, auto) 1fr 50px;
+    grid-template-columns: 2fr [body] 8fr;
     grid-gap: 10px;
-    grid-template-areas: 
-     "header header"
-     "sidebar body"
-     "footer footer";
+
     
     
 }
 
-.header{
-    grid-area: header;
-    border: solid 1px rgb(153, 153, 153);
-    background-color: #ccc;
-
-}
-
-.footer{
-    grid-area: footer;
-    border: solid 1px #999;
-    background-color: #ccc;
-
-}
 
 .body{
-    grid-area: body;
     border: solid 1px rgb(153, 223, 156);
     background-color: rgb(4, 160, 38);
-}
-
-.sidebar{
-    grid-area: sidebar;
-    border: solid 1px rgb(52, 80, 241);
-    background-color: rgb(11, 226, 226);
+    grid-column-start: body;
 }
 
